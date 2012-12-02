@@ -256,12 +256,10 @@
   feedback = document.querySelector('.feedback');
 
   _.suscribe('datepicker.error', function(event) {
-    console.log("Invalid date " + feedback);
     return feedback.className = 'feedback show';
   });
 
   _.suscribe('datepicker.valid', function(event) {
-    console.log("Correct date");
     return feedback.className = 'feedback hide';
   });
 
