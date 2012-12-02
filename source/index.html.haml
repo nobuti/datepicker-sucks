@@ -1,0 +1,21 @@
+.content  
+  %h1 Because datepickers sucks
+  %h2 You know that is so.
+  .inner-content
+    %p 
+      Multiple selects, heavy jquery plugins... Sometimes things have not to be more complex. Focus in the field and use the 
+      %span.key &#x2191;
+      and the 
+      %span.key &#x2193;
+      cursors to select your desired date. If you hold 
+      %span.key shift 
+      key pressed, you can move forward or backward in steps of 15 days.
+
+    %p 
+      I know. I am bored.
+
+    .datepicker-holder
+      %span.feedback.hide Invalid date
+      %input{:type => "text", :class =>"datepicker"} 
+
+= render_partial 'footer'

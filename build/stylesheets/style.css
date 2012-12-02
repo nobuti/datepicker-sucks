@@ -1,0 +1,271 @@
+/* Base
+================================================== */
+/*
+    Consistency fixes
+    adapted from http://necolas.github.com/normalize.css/
+*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, audio, canvas, video {
+  display: block; }
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  min-height: 100%;
+  font-size: 100%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+b, strong {
+  font-weight: bold; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a img, img {
+  -ms-interpolation-mode: bicubic;
+  border: 0; }
+
+input, textarea, button, select {
+  margin: 0;
+  font-size: 100%;
+  line-height: normal;
+  vertical-align: baseline; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+textarea {
+  overflow: auto; }
+
+/*
+    These are easy to forget
+*/
+::selection {
+  background: red;
+  color: white; }
+
+::-moz-selection {
+  background: red;
+  color: white; }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62); }
+
+@font-face {
+  font-family: 'casper_bold_italicregular';
+  src: url("casper_bold_italic-webfont.eot");
+  src: url("casper_bold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("casper_bold_italic-webfont.woff") format("woff"), url("casper_bold_italic-webfont.ttf") format("truetype"), url("casper_bold_italic-webfont.svg#casper_bold_italicregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'casperregular';
+  src: url("casper-webfont.eot");
+  src: url("casper-webfont.eot?#iefix") format("embedded-opentype"), url("casper-webfont.woff") format("woff"), url("casper-webfont.ttf") format("truetype"), url("casper-webfont.svg#casperregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font: 16px/1.5 "casperregular", Helvetica, Arial, sans-serif;
+  color: #3b3b3b;
+  background: #cbcbcb url("../images/fabric_plaid.png"); }
+
+/* Layout
+================================================== */
+body {
+  width: 100%;
+  *zoom: 1; }
+body:before, body:after {
+  content: "";
+  display: table; }
+body:after {
+  clear: both; }
+
+.content {
+  display: block;
+  width: 480px;
+  margin: 0 -10px;
+  *zoom: 1;
+  margin: 30px auto; }
+.content:before, .content:after {
+  content: "";
+  display: table; }
+.content:after {
+  clear: both; }
+
+.inner-content {
+  padding-top: 30px; }
+
+.datepicker-holder {
+  margin: 80px auto; }
+
+.datepicker {
+  display: block;
+  width: 120px;
+  margin: 0 -10px;
+  *zoom: 1;
+  margin-left: 170px; }
+.datepicker:before, .datepicker:after {
+  content: "";
+  display: table; }
+.datepicker:after {
+  clear: both; }
+
+.feedback {
+  position: relative;
+  top: -20px;
+  left: 8px; }
+
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+/* States
+================================================== */
+/* Themes
+================================================== */
+h1, h2, h3 {
+  color: white;
+  display: inline-block;
+  background-color: orange;
+  font-family: 'casper_bold_italicregular';
+  padding: 0 10px;
+  margin: 0;
+  text-shadow: #805300 1px 1px 4px; }
+
+h1 {
+  font: 2.2em; }
+
+h2 {
+  font-size: 1.2em; }
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.75em; }
+
+a {
+  color: orange; }
+
+.key {
+  color: white;
+  background-color: orange;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px inset; }
+
+.datepicker-holder {
+  text-align: center; }
+
+.datepicker {
+  padding: 10px 25px 10px 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  background: white url("../images/calendar.png") no-repeat 96% 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 8px inset, rgba(0, 0, 0, 0.1) 0 -1px 1px inset, rgba(0, 0, 0, 0.1) 1px 0 1px inset, rgba(0, 0, 0, 0.1) -1px 0 1px inset, white 0 1px 0, rgba(90, 90, 90, 0.2) 0 -1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 8px inset, rgba(0, 0, 0, 0.1) 0 -1px 1px inset, rgba(0, 0, 0, 0.1) 1px 0 1px inset, rgba(0, 0, 0, 0.1) -1px 0 1px inset, white 0 1px 0, rgba(90, 90, 90, 0.2) 0 -1px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 8px inset, rgba(0, 0, 0, 0.1) 0 -1px 1px inset, rgba(0, 0, 0, 0.1) 1px 0 1px inset, rgba(0, 0, 0, 0.1) -1px 0 1px inset, white 0 1px 0, rgba(90, 90, 90, 0.2) 0 -1px 0;
+  color: #595959;
+  font-family: 'casperregular';
+  font-size: 0.75em;
+  outline: none; }
+.datepicker:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 8px inset, rgba(0, 0, 0, 0.1) 0 -1px 5px inset, rgba(0, 0, 0, 0.1) 1px 0 5px inset, rgba(0, 0, 0, 0.1) -1px 0 5px inset, white 0 1px 0, rgba(90, 90, 90, 0.2) 0 -1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 8px inset, rgba(0, 0, 0, 0.1) 0 -1px 5px inset, rgba(0, 0, 0, 0.1) 1px 0 5px inset, rgba(0, 0, 0, 0.1) -1px 0 5px inset, white 0 1px 0, rgba(90, 90, 90, 0.2) 0 -1px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 8px inset, rgba(0, 0, 0, 0.1) 0 -1px 5px inset, rgba(0, 0, 0, 0.1) 1px 0 5px inset, rgba(0, 0, 0, 0.1) -1px 0 5px inset, white 0 1px 0, rgba(90, 90, 90, 0.2) 0 -1px 0; }
+
+.hide {
+  opacity: 0; }
+
+.show {
+  opacity: 1; }
+
+.feedback {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  color: #5a5a5a;
+  background-color: #e1e1e1;
+  padding: 10px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: #5a5a5a 1px 1px 3px;
+  -moz-box-shadow: #5a5a5a 1px 1px 3px;
+  box-shadow: #5a5a5a 1px 1px 3px;
+  border: 3px solid white; }
+.feedback:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  background-color: inherit;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  -webkit-box-shadow: rgba(90, 90, 90, 0.5) 2px 2px 1px;
+  -moz-box-shadow: rgba(90, 90, 90, 0.5) 2px 2px 1px;
+  box-shadow: rgba(90, 90, 90, 0.5) 2px 2px 1px; }

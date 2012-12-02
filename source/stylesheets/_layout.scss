@@ -1,0 +1,35 @@
+/* Layout
+================================================== */
+@import "compass/layout/sticky-footer";
+@import "modules/grid";
+  
+$column-width: 40px;
+$gutter-width: 20px;
+$columns: 16;
+
+.content {
+  @include row(8);
+  margin: 30px auto;
+}
+.inner-content {
+  padding-top: 30px;
+}
+.datepicker-holder {
+  margin: 80px auto;
+}
+.datepicker {
+  @include row(2);
+  @include push(3); 
+}
+.feedback {
+  position: relative;
+  top: -20px;
+  left: 8px;
+}
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

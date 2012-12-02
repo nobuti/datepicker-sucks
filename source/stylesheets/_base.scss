@@ -1,0 +1,33 @@
+/* Base
+================================================== */
+@import "modules/normalize";
+
+@font-face {
+    font-family: 'casper_bold_italicregular';
+    src: url('casper_bold_italic-webfont.eot');
+    src: url('casper_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('casper_bold_italic-webfont.woff') format('woff'),
+         url('casper_bold_italic-webfont.ttf') format('truetype'),
+         url('casper_bold_italic-webfont.svg#casper_bold_italicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'casperregular';
+    src: url('casper-webfont.eot');
+    src: url('casper-webfont.eot?#iefix') format('embedded-opentype'),
+         url('casper-webfont.woff') format('woff'),
+         url('casper-webfont.ttf') format('truetype'),
+         url('casper-webfont.svg#casperregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font: 16px/1.5 'casperregular', Helvetica,Arial,sans-serif;
+  color: #3b3b3b;
+  background: darken(#fefefe, 20%) url("../images/fabric_plaid.png");
+}
