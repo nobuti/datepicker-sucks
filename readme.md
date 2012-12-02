@@ -1,8 +1,10 @@
-# Mnml: Middleman Project Template
-------
+# Datepicker sucks
 
-##Basics
-Minimal blank slate of a [Middleman](http://middlemanapp.com/) --rack project, including grid SASS from [Semantic.gs](http://semantic.gs/).
+## Basics
+Multiple selects, heavy jquery plugins... Sometimes things have not to be more complex. Focus in the field and use the ↑ and the ↓ cursors to select your desired date. If you hold shift key pressed, you can move forward or backward in steps of 15 days.
 
-## Usage
-Download and install into ~/.middleman (you'll have to create this directory if it's not already there). You can then use it with the `--template` flag on `middleman init`. For example: `middleman init your-project --template=mnml`
+## Disclaimer
+This experiment is based in [Middleman](http://middlemanapp.com/). Seriously, check it out, it's awesome. Technologies used are coffeescript, sass and haml.
+
+## Dependencies
+[Mocha](http://visionmedia.github.com/mocha/) for testing
