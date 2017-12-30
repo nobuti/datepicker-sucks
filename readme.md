@@ -9,4 +9,4 @@ Multiple selects, heavy jquery plugins... Sometimes things have not to be more c
 This experiment is based in [Middleman](http://middlemanapp.com/). Seriously, check it out, it's awesome. Technologies used are coffeescript, sass and haml.
 
 ## Dependencies
-[Mocha](http://visionmedia.github.com/mocha/) for testing
+[Mocha](http://mochajs.org/) for testing
